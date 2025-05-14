@@ -7,7 +7,7 @@ from transformers import pipeline
 @st.cache_resource
 def cargar_modelos():
     model_emb = SentenceTransformer("all-MiniLM-L6-v2")
-    qa_pipeline = pipeline("text-generation", model="distilgpt2", max_new_tokens=100)
+    qa_pipeline = pipeline("question-answering", model="mrm8488/bert2bert_shared-spanish-finetuned-squad2-es")
     return model_emb, qa_pipeline
 
 @st.cache_data
@@ -28,17 +28,16 @@ def recuperar_contexto(pregunta, model_emb, textos, index):
     _, indices = index.search(np.array(pregunta_embedding), 1)
     return textos[indices[0][0]]
 
-# Interfaz Streamlit
-st.title("🍽️ Chatbot de Recetas Básicas")
+# Interfaz
+st.title("🍳 Chatbot de Recetas en Español")
 
-pregunta = st.text_input("Escribí tu pregunta sobre una receta...")
-
+pregunta = st.text_input("Escribí tu pregunta sobre una receta:")
 if pregunta:
-    with st.spinner("Pensando..."):
+    with st.spinner("Buscando respuesta..."):
         model_emb, qa_pipeline = cargar_modelos()
         textos = cargar_textos("recetas.txt")
         _, index = crear_indice(textos, model_emb)
         contexto = recuperar_contexto(pregunta, model_emb, textos, index)
-        prompt = f"Contexto: {contexto}\nPregunta: {pregunta}\nRespuesta:"
-        respuesta = qa_pipeline(prompt)[0]["generated_text"].split("Respuesta:")[-1].strip()
+        respuesta = qa_pipeline(question=pregunta, context=contexto)["answer"]
         st.success(respuesta)
+
