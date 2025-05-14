@@ -23,10 +23,10 @@ def crear_indice(textos, model_emb):
     index.add(embeddings)
     return embeddings, index
 
-def recuperar_contexto(pregunta, model_emb, textos, index):
+def recuperar_contextos(pregunta, model_emb, textos, index, k=3):
     pregunta_embedding = model_emb.encode([pregunta])
-    _, indices = index.search(np.array(pregunta_embedding), 1)
-    return textos[indices[0][0]]
+    _, indices = index.search(np.array(pregunta_embedding), k)
+    return [textos[i] for i in indices[0]]
 
 # Interfaz
 st.title("🍳 Chatbot de Recetas en Español")
@@ -37,7 +37,9 @@ if pregunta:
         model_emb, qa_pipeline = cargar_modelos()
         textos = cargar_textos("recetas.txt")
         _, index = crear_indice(textos, model_emb)
-        contexto = recuperar_contexto(pregunta, model_emb, textos, index)
-        respuesta = qa_pipeline(question=pregunta, context=contexto)["answer"]
+        contextos = recuperar_contextos(pregunta, model_emb, textos, index, k=3)
+        contexto_completo = "\n".join(contextos)
+        respuesta = qa_pipeline(question=pregunta, context=contexto_completo)["answer"]
         st.success(respuesta)
+
 
