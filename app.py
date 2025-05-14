@@ -7,8 +7,8 @@ from transformers import pipeline
 @st.cache_resource
 def cargar_modelos():
     model_emb = SentenceTransformer("all-MiniLM-L6-v2")
-    qa_pipeline = pipeline("question-answering", model="mrm8488/bert-base-spanish-wwm-cased-finetuned-spa-squad2-es")
-    return model_emb, qa_pipeline
+    generador = pipeline("text2text-generation", model="mrm8488/t5-base-finetuned-spanish-summarization", max_new_tokens=200)
+    return model_emb, generador
 
 @st.cache_data
 def cargar_textos(path):
@@ -29,17 +29,18 @@ def recuperar_contextos(pregunta, model_emb, textos, index, k=3):
     return [textos[i] for i in indices[0]]
 
 # Interfaz
-st.title("🍳 Chatbot de Recetas en Español")
+st.title("🍳 Chatbot de Recetas en Español (respuesta generativa)")
 
 pregunta = st.text_input("Escribí tu pregunta sobre una receta:")
 if pregunta:
     with st.spinner("Buscando respuesta..."):
-        model_emb, qa_pipeline = cargar_modelos()
+        model_emb, generador = cargar_modelos()
         textos = cargar_textos("recetas.txt")
         _, index = crear_indice(textos, model_emb)
         contextos = recuperar_contextos(pregunta, model_emb, textos, index, k=3)
         contexto_completo = "\n".join(contextos)
-        respuesta = qa_pipeline(question=pregunta, context=contexto_completo)["answer"]
+        prompt = f"Contexto: {contexto_completo}\nPregunta: {pregunta}\nRespuesta:"
+        respuesta = generador(prompt)[0]["generated_text"]
         st.success(respuesta)
 
 
