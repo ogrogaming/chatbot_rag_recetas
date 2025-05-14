@@ -7,7 +7,7 @@ from transformers import pipeline
 @st.cache_resource
 def cargar_modelos():
     model_emb = SentenceTransformer("all-MiniLM-L6-v2")
-    qa_pipeline = pipeline("question-answering", model="mrm8488/bert2bert_shared-spanish-finetuned-squad2-es")
+    qa_pipeline = pipeline("question-answering", model="mrm8488/bert-base-spanish-wwm-cased-finetuned-spa-squad2-es")
     return model_emb, qa_pipeline
 
 @st.cache_data
