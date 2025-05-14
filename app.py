@@ -7,7 +7,7 @@ from transformers import pipeline
 @st.cache_resource
 def cargar_modelos():
     model_emb = SentenceTransformer("all-MiniLM-L6-v2")
-    qa_pipeline = pipeline("text-generation", model="tiiuae/falcon-rw-1b", max_new_tokens=100)
+    qa_pipeline = pipeline("text-generation", model="distilgpt2", max_new_tokens=100)
     return model_emb, qa_pipeline
 
 @st.cache_data
