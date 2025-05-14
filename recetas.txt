@@ -1,79 +1,40 @@
 Tortilla de papas:
-Ingredientes: papas, huevos, cebolla, sal.
-Preparación: Pelar y cortar las papas. Freírlas. Batir los huevos con sal, agregar las papas y cebolla picada. Cocinar en sartén por ambos lados.
+Ingredientes: 4 papas medianas, 4 huevos, 1 cebolla, aceite de oliva, sal.
+Preparación: Pelar y cortar las papas en rodajas finas. Freírlas en aceite caliente hasta que estén doradas. En un bol, batir los huevos con sal, agregar las papas y la cebolla picada. Cocinar en sartén hasta dorar ambos lados.
 
 Arroz con leche:
-Ingredientes: arroz, leche, azúcar, canela.
-Preparación: Cocinar arroz en leche con azúcar a fuego lento. Agregar canela y revolver hasta espesar.
+Ingredientes: 1 taza de arroz, 1 litro de leche, 1 taza de azúcar, canela.
+Preparación: Cocinar el arroz en leche con azúcar a fuego lento, revolviendo hasta que espese. Agregar canela a gusto.
 
 Ensalada mixta:
-Ingredientes: lechuga, tomate, zanahoria, aceite, sal.
-Preparación: Lavar y cortar los vegetales. Mezclar todo y aliñar.
-
-Panqueques:
-Ingredientes: huevos, leche, harina, azúcar, manteca.
-Preparación: Mezclar todo y cocinar en sartén enmantecada por ambos lados.
+Ingredientes: lechuga, tomate, zanahoria, aceite de oliva, sal.
+Preparación: Lavar y cortar los vegetales. Mezclar todo en un bol y aliñar con aceite y sal.
 
 Puré de papas:
-Ingredientes: papas, manteca, leche, sal.
-Preparación: Hervir papas, pisarlas con manteca y leche hasta lograr textura cremosa.
+Ingredientes: 4 papas, 2 cucharadas de manteca, 1/2 taza de leche, sal.
+Preparación: Hervir las papas, pelarlas y pisarlas. Agregar manteca y leche caliente. Mezclar hasta lograr una textura cremosa.
 
-Revuelto de huevos:
-Ingredientes: huevos, sal, aceite.
-Preparación: Batir huevos con sal y cocinar en sartén con aceite removiendo.
+Panqueques:
+Ingredientes: 2 huevos, 1 taza de leche, 1 taza de harina, 1 cucharada de azúcar.
+Preparación: Mezclar los ingredientes, cocinar en sartén antiadherente de ambos lados hasta dorar.
+
+Pollo con papas:
+Ingredientes: 4 presas de pollo, 4 papas, 2 dientes de ajo, sal, pimienta, aceite.
+Preparación: Pelar y cortar las papas en cubos. Condimentar el pollo con sal, pimienta y ajo picado. Colocar el pollo y las papas en una bandeja para horno con aceite. Cocinar a 200°C durante 40 minutos, girando a mitad de cocción.
+
+Tarta de espinaca:
+Ingredientes: 1 masa de tarta, 2 tazas de espinaca cocida, 2 huevos, 100g de queso.
+Preparación: Mezclar la espinaca con los huevos y el queso. Rellenar la masa, cubrir si es doble tapa, y hornear 30 minutos.
+
+Fideos con salsa:
+Ingredientes: 250g de fideos, salsa de tomate, queso rallado, sal.
+Preparación: Cocinar los fideos en agua con sal. Calentar la salsa y mezclar con los fideos. Servir con queso.
 
 Tostadas con palta:
-Ingredientes: pan, palta, sal, limón.
-Preparación: Tostar el pan, pisar la palta con sal y limón y untar sobre las tostadas.
-
-Arroz primavera:
-Ingredientes: arroz, zanahoria, arvejas, morrón.
-Preparación: Cocinar arroz y saltear los vegetales. Mezclar todo.
-
-Fideos con manteca:
-Ingredientes: fideos, manteca, sal.
-Preparación: Hervir los fideos, colar y mezclar con manteca derretida.
-
-Sandwich de jamón y queso:
-Ingredientes: pan, jamón, queso.
-Preparación: Colocar jamón y queso entre dos panes. Se puede calentar o servir frío.
-
-Polenta rápida:
-Ingredientes: polenta, agua, sal, queso rallado.
-Preparación: Cocinar la polenta en agua con sal. Servir con queso rallado.
-
-Tarta de verduras:
-Ingredientes: masa, espinaca, huevo, queso.
-Preparación: Cocinar espinaca, mezclar con huevo y queso, rellenar masa y hornear.
+Ingredientes: 2 rebanadas de pan, 1 palta, limón, sal.
+Preparación: Tostar el pan. Pisar la palta con jugo de limón y sal. Untar sobre las tostadas.
 
 Omelette de queso:
-Ingredientes: huevos, queso, sal.
-Preparación: Batir huevos con sal, agregar queso rallado y cocinar en sartén.
+Ingredientes: 2 huevos, 50g de queso, sal.
+Preparación: Batir los huevos con sal, agregar el queso y cocinar en sartén hasta que se dore.
 
-Sopa de verduras:
-Ingredientes: papa, zanahoria, cebolla, zapallito.
-Preparación: Cortar vegetales y hervir todo junto hasta que estén blandos.
-
-Bizcochuelo simple:
-Ingredientes: huevos, azúcar, harina, polvo de hornear.
-Preparación: Batir huevos y azúcar, agregar harina y polvo. Hornear.
-
-Croquetas de arroz:
-Ingredientes: arroz cocido, huevo, pan rallado.
-Preparación: Mezclar arroz con huevo, formar bolitas, empanar y freír.
-
-Quesadillas de queso:
-Ingredientes: tortillas, queso, manteca.
-Preparación: Rellenar las tortillas con queso y dorar en sartén.
-
-Huevos duros:
-Ingredientes: huevos, agua.
-Preparación: Hervir los huevos por 10 minutos y pelar.
-
-Batido de banana:
-Ingredientes: banana, leche, azúcar.
-Preparación: Licuar todo hasta lograr una mezcla homogénea.
-
-Galletas de avena:
-Ingredientes: avena, azúcar, huevo, manteca.
-Preparación: Mezclar ingredientes, formar bolitas y hornear.
